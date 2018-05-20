@@ -1,4 +1,5 @@
 import subprocess
+import cv2
 
 
 def video2frame(input_dir,filename, fps_r):
@@ -34,10 +35,8 @@ def play_save_cap(input_dir, filename, fps=0):
     while (cap.isOpened()):
         ret, frame = cap.read()
         if ret == True:
-            frame = cv2.flip(frame, 0)
-            #frame = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-
-            # write the flipped frame
+            frame = OD_model(frame, 0)
+            
             print(out.isOpened())
             out.write(frame)
 
