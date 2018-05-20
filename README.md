@@ -1,4 +1,4 @@
-# YOLOv2 for realtime video Object Detection
+# YOLOv2 for real-time video Object Detection
 This is a [PyTorch](https://github.com/pytorch/pytorch)
 implementation of YOLOv2(by Long Chen https://github.com/longcw/yolo2-pytorch).
 This project is mainly based on [darkflow](https://github.com/thtrieu/darkflow)
@@ -31,7 +31,7 @@ and the [paper](https://arxiv.org/abs/1612.08242):
 4. Download the trained model [yolo-voc.weights.h5](https://drive.google.com/open?id=0B4pXCfnYmG1WUUdtRHNnLWdaMEU)       
    Set the model path `trained_model `, and `input_dir` `filename` of video file(.avi, .mpeg, ...) in `realtime_OD.py`
 
-5. Run `python realtime_OD.py`. The realtime Object Dectection video will be played as running the model.                   
+5. Run `python realtime_OD.py`. The real-time Object Dectection video will be played as running the model.                   
 
    And the output video will be saved as the same type as your input video.
 
