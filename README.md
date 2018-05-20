@@ -45,5 +45,5 @@ and the [paper](https://arxiv.org/abs/1612.08242):
 ![image](https://github.com/judichunt/yolo2-pytorch-realtime-video/blob/master/demo_gif/Obj_TaipeiStreet1.gif)
 
 ## Training YOLOv2, Evaluation, Training on your own data
-Following the instruction in            
+Follow the instructions in            
 https://github.com/longcw/yolo2-pytorch
