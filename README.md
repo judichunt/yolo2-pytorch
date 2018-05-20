@@ -31,7 +31,7 @@ and the [paper](https://arxiv.org/abs/1612.08242):
 4. Download the trained model [yolo-voc.weights.h5](https://drive.google.com/open?id=0B4pXCfnYmG1WUUdtRHNnLWdaMEU)       
    Set the model path `trained_model `, and `input_dir` `filename` of video file(.avi, .mpeg, ...) in `realtime_OD.py`
 
-5. Run `python realtime_OD.py`. The realtime Object Dectection video will be played as applying the model.                  
+5. Run `python realtime_OD.py`. The realtime Object Dectection video will be played as running the model.                  
    And the output video will be saved as the same type as your input video.
 
 ## Training YOLOv2
