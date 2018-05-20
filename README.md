@@ -14,6 +14,14 @@ Testing an image in VOC2007 costs about 13~20ms.
 For details about YOLO and YOLOv2 please refer to their [project page](https://pjreddie.com/darknet/yolo/) 
 and the [paper](https://arxiv.org/abs/1612.08242):
 *YOLO9000: Better, Faster, Stronger by Joseph Redmon and Ali Farhadi*.
+## Requirements
+* python 3.6
+* Anaconda3
+* pytorch 3.0+
+* [gcc](https://anaconda.org/anaconda/gxx_linux-64)
+* cuda 8.0+
+    
+
 
 ## Installation and apply Object Detection on Videos
 1. Clone this repository
