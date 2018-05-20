@@ -17,7 +17,7 @@ and the [paper](https://arxiv.org/abs/1612.08242):
 ## Requirements
 * python 3.6
 * Anaconda3
-* pytorch 3.0+
+* pytorch 0.3.0+
 * [gcc](https://anaconda.org/anaconda/gxx_linux-64)
 * cuda 8.0+
     
