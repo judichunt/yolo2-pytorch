@@ -12,7 +12,7 @@ cv2.setNumThreads(0)
 h5_fname = 'models/yolo-voc.weights.h5'
 trained_model = cfg.trained_model
 thresh = 0.5
-im_path = 'frames'
+#im_path = 'frames'
 # ---
 
 net = Darknet19()
@@ -49,7 +49,8 @@ def frame_tran(image, i):
 
 
     total_time = t_total.toc()
-
+    
+    #print the how much time of the transformation cost each frame
     if i % 1 == 0:
         format_str = 'frame: %d, ' \
                      '(detection: %.1f Hz, %.1f ms) ' \
@@ -76,7 +77,7 @@ def play_save_cap(input_dir, filename, fps=0):
     while (cap.isOpened()):
         ret, frame = cap.read()
         if ret == True:
-
+            # Transform the frame with Obeject Detection model
             frame=frame_tran(frame, i)
             out.write(frame)
 
