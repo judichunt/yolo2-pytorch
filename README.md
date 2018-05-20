@@ -1,7 +1,7 @@
 # YOLOv2 for real-time video Object Detection
-This is a [PyTorch](https://github.com/pytorch/pytorch)
+This is modified from the [PyTorch](https://github.com/pytorch/pytorch)
 implementation of YOLOv2(by Long Chen https://github.com/longcw/yolo2-pytorch).
-This project is mainly based on [darkflow](https://github.com/thtrieu/darkflow)
+The model is mainly based on [darkflow](https://github.com/thtrieu/darkflow)
 and [darknet](https://github.com/pjreddie/darknet).
 
 Used a Cython extension for postprocessing and 
