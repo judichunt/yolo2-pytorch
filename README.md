@@ -37,6 +37,8 @@ and the [paper](https://arxiv.org/abs/1612.08242):
 
 ## Demo video
 ![image](https://github.com/judichunt/yolo2-pytorch-realtime-video/blob/master/demo_gif/example.gif)
+![image](https://github.com/judichunt/yolo2-pytorch-realtime-video/blob/master/demo_gif/Obj_HomeOffice.gif)
+![image](https://github.com/judichunt/yolo2-pytorch-realtime-video/blob/master/demo_gif/Obj_HomeOffice1.gif)
 
 ## Training YOLOv2
 You can train YOLO2 on any dataset. Here we train it on VOC2007/2012.
