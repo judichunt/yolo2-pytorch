@@ -1,6 +1,6 @@
 # YOLOv2 in PyTorch
 This is a [PyTorch](https://github.com/pytorch/pytorch)
-implementation of YOLOv2.
+implementation of YOLOv2(by Long Chen https://github.com/longcw/yolo2-pytorch).
 This project is mainly based on [darkflow](https://github.com/thtrieu/darkflow)
 and [darknet](https://github.com/pjreddie/darknet).
 
@@ -12,25 +12,7 @@ For details about YOLO and YOLOv2 please refer to their [project page](https://p
 and the [paper](https://arxiv.org/abs/1612.08242):
 *YOLO9000: Better, Faster, Stronger by Joseph Redmon and Ali Farhadi*.
 
-**NOTE 1:**
-This is still an experimental project.
-VOC07 test mAP is about 0.71 (trained on VOC07+12 trainval,
-reported by [@cory8249](https://github.com/longcw/yolo2-pytorch/issues/23)).
-See [issue1](https://github.com/longcw/yolo2-pytorch/issues/1) 
-and [issue23](https://github.com/longcw/yolo2-pytorch/issues/23)
-for more details about training.
-
-**NOTE 2:**
-I recommend to write your own dataloader using [torch.utils.data.Dataset](http://pytorch.org/docs/data.html)
-since `multiprocessing.Pool.imap` won't stop even there is no enough memory space. 
-An example of `dataloader` for VOCDataset: [issue71](https://github.com/longcw/yolo2-pytorch/issues/71).
-
-**NOTE 3:**
-Upgrade to PyTorch 0.4: https://github.com/longcw/yolo2-pytorch/issues/59
-
-
-
-## Installation and demo
+## Installation and apply Object Detection on Videos
 1. Clone this repository
     ```bash
     git clone git@github.com:longcw/yolo2-pytorch.git
@@ -41,9 +23,15 @@ Upgrade to PyTorch 0.4: https://github.com/longcw/yolo2-pytorch/issues/59
     cd yolo2-pytorch
     ./make.sh
     ```
-3. Download the trained model [yolo-voc.weights.h5](https://drive.google.com/open?id=0B4pXCfnYmG1WUUdtRHNnLWdaMEU) 
-and set the model path in `demo.py`
-4. Run demo `python demo.py`. 
+3. Install opencv
+    ```bash
+    conda install -c conda-forge opencv 
+    ```
+
+4. Download the trained model [yolo-voc.weights.h5](https://drive.google.com/open?id=0B4pXCfnYmG1WUUdtRHNnLWdaMEU) 
+and set the model path `input_dir` `filename` in `realtime_OD.py`
+
+5. Run `python realtime_OD.py`. The realtime Object Dectection video will be played as applying the model. And the output video will be saved.
 
 ## Training YOLOv2
 You can train YOLO2 on any dataset. Here we train it on VOC2007/2012.
