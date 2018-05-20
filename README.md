@@ -46,4 +46,4 @@ and the [paper](https://arxiv.org/abs/1612.08242):
 
 ## Training YOLOv2, Evaluation, Training on your own data
 Follow the instructions in            
-https://github.com/longcw/yolo2-pytorch
+[YOLOv2 in PyTorch(]https://github.com/longcw/yolo2-pytorch)
