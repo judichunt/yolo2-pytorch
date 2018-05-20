@@ -4,7 +4,7 @@ implementation of YOLOv2(by Long Chen https://github.com/longcw/yolo2-pytorch).
 This project is mainly based on [darkflow](https://github.com/thtrieu/darkflow)
 and [darknet](https://github.com/pjreddie/darknet).
 
-I used a Cython extension for postprocessing and 
+Used a Cython extension for postprocessing and 
 `multiprocessing.Pool` for image preprocessing.
 Testing an image in VOC2007 costs about 13~20ms.
 
