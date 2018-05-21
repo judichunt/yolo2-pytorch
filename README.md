@@ -2,7 +2,7 @@
 This is modified from the [PyTorch](https://github.com/pytorch/pytorch)
 implementation of YOLOv2(by Long Chen https://github.com/longcw/yolo2-pytorch).    
 For the video process, I used [OpenCV](https://github.com/opencv/opencv/tree/3.4.1) and [FFmpeg](https://www.ffmpeg.org/) for real-time and frame-based transformation.         
-Real-time Object Detection works on 720P videos of different types.
+Real-time Object Detection works on 720p videos of different types.
 
 The model is mainly based on [darkflow](https://github.com/thtrieu/darkflow)
 and [darknet](https://github.com/pjreddie/darknet).
