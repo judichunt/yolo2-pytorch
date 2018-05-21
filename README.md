@@ -26,7 +26,7 @@ and the [paper](https://arxiv.org/abs/1612.08242):
 ## Installation and apply Object Detection on Videos
 1. Clone this repository
     ```bash
-    git clone git@github.com:longcw/yolo2-pytorch.git
+    git clone git@github.com:judichunt/yolo2-pytorch-realtime-video
     ```
 
 2. Build the reorg layer ([`tf.extract_image_patches`](https://www.tensorflow.org/api_docs/python/tf/extract_image_patches))
